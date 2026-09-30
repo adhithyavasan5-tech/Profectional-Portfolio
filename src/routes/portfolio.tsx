@@ -6,6 +6,7 @@ import projectOrbital from "@/assets/project-orbital.jpg";
 import projectFlux from "@/assets/project-flux.jpg";
 import projectVanta from "@/assets/project-vanta.jpg";
 import aboutStudio from "@/assets/about-studio.jpg";
+import ldrsImage from "@/assets/Fifth.png";
 import {
   SiHtml5,
   SiCss,
@@ -254,6 +255,17 @@ const projects = [
     alt: "Flowing liquid metal ribbon in a dark environment with cool metallic reflections",
     demo: "https://marvel-avengers-vert.vercel.app/",
     github: "https://github.com/adhithyavasan5-tech/Marvel-Avengers",
+  },
+  {
+    title: "LDRS",
+    year: "2026",
+    description:
+      "A real-time watch-together platform designed for long-distance couples to watch movies, chat, and connect through synchronized experiences.",
+    tags: ["React", "Node.js", "Socket.io","MongoDB","WebRTC","Video Streaming"],
+    image: ldrsImage,
+    alt: "Futuristic dashboard UI with glowing data visualizations on dark glass panels",
+    demo: "https://ldrs-blue.vercel.app/home",
+    github: "https://github.com/adhithyavasan5-tech/LDRS",
   },
   
 ];
