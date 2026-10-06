@@ -7,6 +7,7 @@ import projectFlux from "@/assets/project-flux.jpg";
 import projectVanta from "@/assets/project-vanta.jpg";
 import aboutStudio from "@/assets/about-studio.jpg";
 import ldrsImage from "@/assets/Fifth.png";
+import kollywood from "@/assets/PROJECT-kolly.jpeg";
 import {
   SiHtml5,
   SiCss,
@@ -217,7 +218,7 @@ const projects = [
     year: "2026",
     description:
       "MediTwin AI is an AI-powered smart hospital digital twin that optimizes patient flow, doctor queues, appointments, and waiting times for a faster, smoother healthcare experience.",
-    tags: ["AI", "Healthcare","Web Development", "Firebase"],
+    tags: ["AI", "Healthcare", "Web Development", "Firebase"],
     image: projectLumen,
     alt: "Abstract 3D glass sculpture floating in dark space with iridescent blue and violet light",
     demo: "https://adhithyavasan5-tech.github.io/MediTwin-AI/",
@@ -228,7 +229,7 @@ const projects = [
     year: "2026",
     description:
       "FixFlow is a smart service management platform that connects users with reliable technicians, simplifies issue reporting, and streamlines the entire repair process.",
-    tags: ["React", "Web Development", "Service Management","Responsive Design"],
+    tags: ["React", "Web Development", "Service Management", "Responsive Design"],
     image: projectOrbital,
     alt: "Futuristic dashboard UI with glowing data visualizations on dark glass panels",
     demo: "https://flow-home-pros-git-main-adhithyavasan5-5105s-projects.vercel.app/",
@@ -246,11 +247,11 @@ const projects = [
     github: "https://github.com/adhithyavasan5-tech/Portfolio",
   },
   {
-    title:"MARVEL-LANDINGPAGE",
+    title: "MARVEL-LANDINGPAGE",
     year: "2026",
     description:
       "An interactive Marvel-themed website showcasing iconic heroes and villains through immersive character pages, animations, and cinematic UI.",
-    tags: ["Marvel", "HTML","CSS","JavaScript", "Animations"],
+    tags: ["Marvel", "HTML", "CSS", "JavaScript", "Animations"],
     image: projectFlux,
     alt: "Flowing liquid metal ribbon in a dark environment with cool metallic reflections",
     demo: "https://marvel-avengers-vert.vercel.app/",
@@ -261,13 +262,24 @@ const projects = [
     year: "2026",
     description:
       "A real-time watch-together platform designed for long-distance couples to watch movies, chat, and connect through synchronized experiences.",
-    tags: ["React", "Node.js", "Socket.io","MongoDB","WebRTC","Video Streaming"],
+    tags: ["React", "Node.js", "Socket.io", "MongoDB", "WebRTC", "Video Streaming"],
     image: ldrsImage,
     alt: "Futuristic dashboard UI with glowing data visualizations on dark glass panels",
     demo: "https://ldrs-blue.vercel.app/home",
     github: "https://github.com/adhithyavasan5-tech/LDRS",
   },
-  
+  {
+    title: "Kollywood Clash",
+    year: "2026",
+    description:
+      "A real-time Tamil movie guessing game where players compete to identify movies through clues, race against the timer, and climb the leaderboard.",
+    tags: ["React", "Supabase", "PostgreSQL", "TMDB API", "Real-time Multiplayer", "Game"],
+    image: kollywood,
+    alt: "Premium Tamil cinema themed movie guessing game interface",
+    demo: "https://kollywoodmoviechallenges.vercel.app/",
+    github: "https://github.com/adhithyavasan5-tech/kollywood",
+  },
+
 ];
 
 function ProjectCard({
@@ -392,6 +404,7 @@ const NAV_ITEMS = [
   { id: "about", label: "About", href: "#about" },
   { id: "skills", label: "Skills", href: "#skills" },
   { id: "work", label: "Projects", href: "#work" },
+
   { id: "contact", label: "Contact", href: "#contact" },
 ];
 
@@ -573,7 +586,7 @@ export function PortfolioPage() {
                 <p className="mt-1 text-xs text-frost-muted">projects shipped</p>
               </div>
               <div className="h-8 w-px bg-frost/15" aria-hidden="true" />
-              
+
             </div>
           </div>
         </div>
@@ -607,7 +620,7 @@ export function PortfolioPage() {
       <section id="about" className="relative z-10 scroll-mt-20">
         <div className="mx-auto max-w-6xl px-6 py-24">
           <Reveal>
-          
+
             <h2 className="mt-3 font-display text-4xl font-normal text-balance sm:text-6xl">About me</h2>
             <span className="mt-5 block h-1 w-14 origin-left scale-x-0 rounded-full bg-accent transition-transform delay-300 duration-1000 ease-out group-data-[visible=true]/reveal:scale-x-100" />
           </Reveal>
@@ -615,12 +628,12 @@ export function PortfolioPage() {
             <div className="lg:col-span-7">
               <Reveal delay={100}>
                 <p className="max-w-[62ch] text-base leading-8 text-pretty text-frost-muted sm:text-lg">
-                 Hi, I’m Adhithya — a passionate Full-Stack Developer, AI Enthusiast, and UI/UX Designer who loves turning creative ideas into meaningful digital experiences.
+                  Hi, I’m Adhithya — a passionate Full-Stack Developer, AI Enthusiast, and UI/UX Designer who loves turning creative ideas into meaningful digital experiences.
 
-I’m currently pursuing my B.Tech in Information Technology, where I’m continuously exploring web development, artificial intelligence, modern UI/UX, and emerging technologies.
+                  I’m currently pursuing my B.Tech in Information Technology, where I’m continuously exploring web development, artificial intelligence, modern UI/UX, and emerging technologies.
                 </p>
                 <p className="mt-5 max-w-[62ch] text-base leading-8 text-pretty text-frost-muted sm:text-lg">
-                 I believe great development is not just about writing code — it’s about understanding people, solving problems, and creating experiences that are simple, useful, and memorable.
+                  I believe great development is not just about writing code — it’s about understanding people, solving problems, and creating experiences that are simple, useful, and memorable.
                 </p>
                 <Magnetic href="#contact" className="mt-8 rounded-full bg-accent px-6 py-3 text-sm font-semibold text-ink hover:bg-accent/90">
                   Get in touch <span aria-hidden="true">→</span>
@@ -647,7 +660,7 @@ I’m currently pursuing my B.Tech in Information Technology, where I’m contin
       <section id="skills" className="relative z-10 scroll-mt-20 border-y border-frost/10 bg-frost/[0.025]">
         <div className="mx-auto max-w-6xl px-6 py-24">
           <Reveal>
-            
+
             <h2 className="mt-3 font-display text-4xl font-normal text-balance sm:text-6xl">Tools I build with</h2>
           </Reveal>
           <div className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-4">
@@ -708,7 +721,7 @@ I’m currently pursuing my B.Tech in Information Technology, where I’m contin
           <p className="text-sm text-frost-muted">
             © 2026 Adhithyavasan R
           </p>
-      
+
         </div>
       </footer>
     </div>
