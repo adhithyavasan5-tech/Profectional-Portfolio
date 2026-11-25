@@ -477,6 +477,32 @@ h1 .o{color:transparent;-webkit-text-stroke:2.5px var(--ink)}
   display: block;
   white-space: nowrap;
 }
+  <style>
+  /* Desktop */
+  @media screen and (min-width: 768px) {
+    html {
+      zoom: 0.67;
+    }
+  }
+
+  /* Mobile */
+  @media screen and (max-width: 767px) {
+    html {
+      zoom: 1;
+    }
+
+    body {
+      width: 100%;
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+
+    img, video, iframe {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+</style>
 </style>
 <noscript><style>#menu-btn,#loader,.read,.spine{display:none}.rv{opacity:1}</style></noscript>
 
